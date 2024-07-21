@@ -1,18 +1,20 @@
-var customerName = "bob";
-const LeastFavoriteCustomer = 'parliament'
-function upperCaseCustomerName(){
+var customerName = `bob`;
+
+function upperCaseCustomerName() {
     customerName = customerName.toUpperCase();
 }
-var bestCustomer ;
+
 function setBestCustomer() {
-    bestCustomer = 'not bob'
+    bestCustomer = `not bob`;
+
 }
-var bestCustomer;
-function overwriteBestCustomer () {
-    bestCustomer = 'maybe bob';
+
+function overwriteBestCustomer() {
+    bestCustomer = `maybe bob`;
 }
+
+const leastFavoriteCustomer = 'initial value';
 
 function changeLeastFavoriteCustomer() {
-    LeastFavoriteCustomer = "corruption";
+  leastFavoriteCustomer = 'new value'; // This will cause an error because `leastFavoriteCustomer` is a constant
 }
-
